@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe with Minimax AI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        .board {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            gap: 5px;
+            background-color: #333;
+            padding: 5px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+        .cell {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            cursor: pointer;
+            border: none;
+        }
+        .cell:hover {
+            background-color: #f0f0f0;
+        }
+        .status {
+            font-size: 24px;
+            margin: 20px;
+        }
+        button#reset {
+            font-size: 18px;
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button#reset:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tic Tac Toe with AI</h1>
+    <div class="status" id="status">Your turn (X)</div>
+    <div class="board" id="board"></div>
+    <button id="reset">Reset Game</button>
+
+    <script src="functions.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
